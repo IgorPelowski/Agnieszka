@@ -7,3 +7,12 @@ import '../scss/main.scss';
 /* place your code below */
 
 console.log('HELLO 🚀')
+
+let c = 45;
+
+function draw(){
+  document.documentElement.style.setProperty('--direction', c++ + 'deg');
+  requestAnimationFrame(draw);
+}
+
+requestAnimationFrame(draw);

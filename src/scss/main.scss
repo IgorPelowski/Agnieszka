@@ -3,11 +3,230 @@
 @import "_variables";
 @import "modules/hello.scss";
 
+:root {
+  --direction: -45deg;
+}
+
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+}
+
+.background {
+  background-image: url(https://images6.alphacoders.com/434/thumb-1920-434783.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.foreground {
+  background-image: url(https://img3.goodfon.com/original/1680x1050/a/2b/poznan-poland-gorod.jpg);
+  -webkit-mask-image: linear-gradient(
+    var(--direction),
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  -webkit-mask-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.hero {
   min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgb(26, 26, 26);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  &__main {
+    min-height: 100vh;
+    min-width: 100vw;
+    grid-row: 1/13;
+    grid-column: 1/5;
+    position: relative;
+    z-index: 1;
+  }
+  &__text{
+    z-index: 11;
+    color: white;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(85, 85, 85);
+    opacity: 0.8;
+    &__1{
+      z-index: 11;
+      color: white;
+      grid-column: 1/2;
+      font-size: 30px;
+      line-height: 5vmin;
+      font-weight: 500;
+      text-align: center;
+      padding-top: 10px;
+    }
+    &__2{
+      z-index: 11;
+      color: white;
+      grid-column: 2/3;
+      font-size: 30px;
+      line-height: 5vmin;
+      font-weight: 500;
+      text-align: center;
+      padding-top: 10px;
+    }
+    &__3{
+      z-index: 11;
+      color: white;
+      grid-column: 3/4;
+      font-size: 30px;
+      line-height: 5vmin;
+      font-weight: 500;
+      text-align: center;
+      padding-top: 10px;
+    }
+    &__4{
+      z-index: 11;
+      color: white;
+      grid-column: 4/5;
+      font-size: 30px;
+      line-height: 5vmin;
+      font-weight: 500;
+      text-align: center;
+      padding-top: 10px;
+    }
+  }
+
+  &__site1 {
+    grid-row: 1/13;
+    grid-column: 1/2;
+    
+    z-index: 2;
+    transform-style: preserve-3d;
+    transition: transform 500ms ease 0s, opacity 700ms ease 0s;
+    opacity: 0;
+    transform: translateX(0%) translateY(0%) translateZ(0px) scaleX(1)
+      scaleY(1) scaleZ(1);
+      background-image: url(https://i.pinimg.com/originals/bd/81/af/bd81af91ec4ed4d81e28b531d54fbaa1.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__text{
+      -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+        
+        z-index: 10;
+        width: 25%;
+        padding-right: 0px;
+        
+        clear: none;
+        font-family: Circularpro, sans-serif;
+        color: #fff;
+        font-size: 30px;
+        line-height: 5vmin;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        opacity: 1 !important;
+        grid-row: 1/13;
+        grid-column: 1/2;
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+        justify-content: center;
+        align-self: center;
+        
+    
+    }
+      
+  }
+  .hero__site1:hover{
+    opacity: 0.9;
+    
+  }
+  .hero__site2:hover{
+    opacity: 0.9;
+  }
+  .hero__site3:hover{
+    opacity: 0.9;
+  }
+  .hero__site4:hover{
+    opacity: 0.9;
+  }
+  &__site2 {
+    grid-row: 1/13;
+    grid-column: 2/3;
+    
+    background-image: url(https://wallpapercave.com/wp/wp6701058.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+    z-index: 2;
+    transform-style: preserve-3d;
+    transition: transform 500ms ease 0s, opacity 700ms ease 0s;
+    opacity: 0;
+    transform: translateX(0%) translateY(0%) translateZ(0px) scaleX(1)
+      scaleY(1) scaleZ(1);
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  }
+  &__site3 {
+    grid-row: 1/13;
+    grid-column: 3/4;
+    
+    background-image: url(https://c.wallhere.com/photos/b2/7d/house_architecture_luxury_homes_modern_car_Garage_mansions-1531541.jpg!d);
+      background-repeat: no-repeat;
+      background-position: center;
+    z-index: 2;
+    transform-style: preserve-3d;
+    transition: transform 500ms ease 0s, opacity 700ms ease 0s;
+    opacity: 0;
+    transform: translateX(0%) translateY(0%) translateZ(0px) scaleX(1)
+      scaleY(1) scaleZ(1);
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  }
+  &__site4 {
+    grid-row: 1/13;
+    grid-column: 4/5;
+    
+    background-image: url(https://wallpapercave.com/wp/wp3049324.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+    z-index: 2;
+    transform-style: preserve-3d;
+    transition: transform 500ms ease 0s, opacity 700ms ease 0s;
+    opacity: 0;
+    transform: translateX(0%) translateY(0%) translateZ(0px) scaleX(1)
+      scaleY(1) scaleZ(1);
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  }
 }
