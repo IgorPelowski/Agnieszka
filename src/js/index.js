@@ -16,3 +16,23 @@ function draw(){
 }
 
 requestAnimationFrame(draw);
+
+
+
+
+const text = document.querySelector(".hero__text");
+const hideout = document.querySelector(".hero__site1");
+const x = document.querySelector(".x");
+
+const hide = document.querySelector(".hide");
+
+function opacity(){
+  
+  
+  hideout.classList.toggle("hide")
+};
+
+text.addEventListener("mouseenter", opacity);
+
+
+console.log('hi')
