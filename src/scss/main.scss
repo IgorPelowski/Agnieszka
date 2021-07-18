@@ -247,37 +247,30 @@ body {
     grid-row: 5/10;
   }
 
-  .hide{
-    grid-row: 1/13;
-    grid-column: 1/2;
-    
-    z-index: 10;
-    transform-style: preserve-3d;
-    transition: transform 500ms ease 0s, opacity 700ms ease 0s;
-    opacity: 1;
-    transform: translateX(0%) translateY(0%) translateZ(0px) scaleX(1)
-      scaleY(1) scaleZ(1);
-      background-image: url(https://i.pinimg.com/originals/bd/81/af/bd81af91ec4ed4d81e28b531d54fbaa1.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-    color: white;
-    display: flex;
-    justify-content: center;
-    
-    
-    
-    
-    &__text{
-      
-     text-align: center;
-     padding-top: 80%;
-      font-size: 20px;
-      color: rgb(44, 150, 255);
-    
-    }
-  }
+  
 
 
 
 
+}
+.hide{
+  grid-row: 1/13;
+  grid-column: 1/2;
+  z-index: 2;
+  transform-style: preserve-3d;
+  transition: transform 500ms ease 0s, opacity 700ms ease 0s;
+  opacity: 1;
+  transform: translateX(0%) translateY(0%) translateZ(0px) scaleX(1)
+    scaleY(1) scaleZ(1);
+    background-image: url(https://i.pinimg.com/originals/bd/81/af/bd81af91ec4ed4d81e28b531d54fbaa1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  
+  
+  
+  
+  
 }

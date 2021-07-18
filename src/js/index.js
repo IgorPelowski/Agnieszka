@@ -28,11 +28,15 @@ const hide = document.querySelector(".hide");
 
 function opacity(){
   
-  
-  hideout.classList.toggle("hide")
+  hideout.classList.remove("hero__site1")
+  hideout.classList.add("hide")
 };
+function opacitynone(){
+  hideout.classList.remove("hide")
+  hideout.classList.add("hero__site1")
+}
 
 text.addEventListener("mouseenter", opacity);
-
+text.addEventListener("mouseleave", opacitynone)
 
 console.log('hi')
