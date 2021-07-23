@@ -215,6 +215,13 @@ body {
     opacity: 0.9;
     
   }
+  .hero__site1:focus{
+    grid-column: 1/4;
+    background-color: blue;
+    transition: transform 5000ms ease 0s, opacity 700ms ease 0s;
+    transform: translateX(0%) translateY(0%) translateZ(0px) scaleX(1)
+      scaleY(1) scaleZ(1);
+  }
   .hero__site2:hover{
     opacity: 0.9;
   }
@@ -282,6 +289,73 @@ body {
     
   }
 }
+.mouseclick{
+    grid-row: 1/13;
+    grid-column: 1/3;
+    z-index: 2;
+    transform-style: preserve-3d;
+    transition: transform 500ms ease 0s, opacity 700ms ease 0s;
+    opacity: 1;
+    transform: translateX(0%) translateY(0%) translateZ(0px) scaleX(1)
+    scaleY(1) scaleZ(1);
+    background-image: url(https://i.pinimg.com/originals/bd/81/af/bd81af91ec4ed4d81e28b531d54fbaa1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.mouseclick1{
+  grid-row: 1/13;
+  grid-column: 2/4;
+  z-index: 2;
+  transform-style: preserve-3d;
+  transition: transform 500ms ease 0s, opacity 700ms ease 0s;
+  opacity: 1;
+  transform: translateX(0%) translateY(0%) translateZ(0px) scaleX(1)
+  scaleY(1) scaleZ(1);
+  background-image: url(https://wallpapercave.com/wp/wp6701058.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.mouseclick2{
+  grid-row: 1/13;
+  grid-column: 3/5;
+  z-index: 2;
+  transform-style: preserve-3d;
+  transition: transform 500ms ease 0s, opacity 700ms ease 0s;
+  opacity: 1;
+  transform: translateX(0%) translateY(0%) translateZ(0px) scaleX(1)
+  scaleY(1) scaleZ(1);
+  background-image: url(https://c.wallhere.com/photos/b2/7d/house_architecture_luxury_homes_modern_car_Garage_mansions-1531541.jpg!d);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.mouseclick3{
+  grid-row: 1/13;
+  grid-column: 3/5;
+  z-index: 2;
+  transform-style: preserve-3d;
+  transition: transform 500ms ease 0s, opacity 700ms ease 0s;
+  opacity: 1;
+  transform: translateX(0%) translateY(0%) translateZ(0px) scaleX(1)
+  scaleY(1) scaleZ(1);
+  background-image: url(https://wallpapercave.com/wp/wp3049324.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
 @media (max-width: 650px)  {
   .hero__text{
     height: 50%;
@@ -327,7 +401,35 @@ body {
   .hide{
     display: none;
   }
+  .mouseclick{
+    grid-row: 1/5;
+    grid-column: 1/5;
+  }
+  .mouseclick1{
+    grid-row: 1/5;
+    grid-column: 1/5;
+  }
+  .mouseclick2{
+    grid-row: 5/9;
+    grid-column: 1/5;
+  }
+  .mouseclick3{
+    grid-row: 5/9;
+    grid-column: 1/5;
+  }
+  .hide{
+    display: none;
 
+  }
+  .hide2{
+    display: none;
+  }
+  .hide3{
+    display: none;
+  }
+  .hide4{
+    display: none;
+  }
 
 
 }

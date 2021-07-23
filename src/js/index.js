@@ -90,3 +90,94 @@ function opacitynone4(){
 }
 text4.addEventListener("mouseenter", opacity4);
 text4.addEventListener("mouseleave", opacitynone4)
+
+
+
+const textclick = document.querySelector(".hero__site1");
+const mouseclick = document.querySelector(".mouseclick");
+const enter = document.querySelector(".hero__text__1")
+
+function click(){
+  textclick.classList.remove("hero__site1")
+  textclick.classList.add("mouseclick")
+};
+
+function clickremove(){
+  textclick.classList.remove("mouseclick")
+  textclick.classList.add("hero__site1")
+};
+
+
+
+textclick.addEventListener("click", click);
+textclick.addEventListener("mouseleave", clickremove)
+
+
+
+
+
+const textclick1 = document.querySelector(".hero__site2");
+const mouseclick1 = document.querySelector(".mouseclick1");
+const enter1 = document.querySelector(".hero__text__2")
+
+function click1(){
+  textclick1.classList.remove("hero__site2")
+  textclick1.classList.add("mouseclick1")
+};
+
+function clickremove1(){
+  textclick1.classList.remove("mouseclick1")
+  textclick1.classList.add("hero__site2")
+};
+
+
+
+textclick1.addEventListener("click", click1);
+textclick1.addEventListener("mouseleave", clickremove1)
+
+
+
+
+const textclick2 = document.querySelector(".hero__site3");
+const mouseclick2 = document.querySelector(".mouseclick2");
+const enter2 = document.querySelector(".hero__text__3")
+
+function click2(){
+  textclick2.classList.remove("hero__site3")
+  textclick2.classList.add("mouseclick2")
+};
+
+function clickremove2(){
+  textclick2.classList.remove("mouseclick2")
+  textclick2.classList.add("hero__site3")
+};
+
+
+
+textclick2.addEventListener("click", click2);
+textclick2.addEventListener("mouseleave", clickremove2)
+
+
+
+
+
+const textclick3 = document.querySelector(".hero__site4");
+const mouseclick3 = document.querySelector(".mouseclick3");
+const enter3 = document.querySelector(".hero__text__4")
+
+function click3(){
+  textclick3.classList.remove("hero__site4")
+  textclick3.classList.add("mouseclick3")
+};
+
+function clickremove3(){
+  textclick3.classList.remove("mouseclick3")
+  textclick3.classList.add("hero__site4")
+};
+
+
+
+textclick3.addEventListener("click", click3);
+textclick3.addEventListener("mouseleave", clickremove3)
+
+
